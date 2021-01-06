@@ -318,7 +318,24 @@ p{
     box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
 }
 
-.best-price {
+.most-powerful {
+    position: absolute;
+    top: .5rem;
+    margin-left: -8px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    margin-top: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: .8px solid rgb(134, 230, 155);
+    background-color: rgba(31, 216, 71, 0.4);
+    padding: 8px;
+    border-radius: 5%;
+    box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+}
+
+.cheapest-juicer {
     position: absolute;
     top: .5rem;
     margin-left: 6px;
@@ -335,7 +352,7 @@ p{
     box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
 }
 
-.best-price:hover , .most-popular:hover {
+.most-powerful:hover , .most-popular:hover, .cheapest-juicer:hover {
     animation: spin 2.2s infinite;
     animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     background-color: rgba(15, 255, 67, 0.4);
@@ -383,11 +400,19 @@ p{
     background-color: rgba(31, 216, 71, 0.4);
     align-content: center;
     padding: 1.5rem 4.5rem;
+    margin-top: 20px;
     cursor: pointer;
     margin-left: 32%;
     font-family: 'Crimson Text', serif;
     font-size: 15px;
     font-weight: 600;
+}
+
+
+.comp-button:hover {
+    background-color: rgba(169, 176, 169, 0.7);
+    box-shadow: 0px 0px 20px 0 #00ffe5de;
+    
 }
 
 
@@ -462,15 +487,17 @@ p{
 }
 
 #projects .project-info h1{
-    font-size: 4rem;
-    font-weight: 500;
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
 }
 
 #projects .project-info h2{
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-weight: 500;
     margin-top: 10px;
-    
+    font-family: 'Crimson Text', serif;
+    color: rgb(22, 182, 83);    
 }
 #projects .project-info p{
     color: white;
