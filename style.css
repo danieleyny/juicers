@@ -5,6 +5,8 @@
     box-sizing: 0;
 }
 
+
+
 html {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -29,7 +31,7 @@ img {
 
 p{
     color: black;
-    font-size: 1.4rem;
+    font-size: 16px;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 300;
@@ -45,7 +47,7 @@ p{
     text-align: center;
 }
 .section-title span {
-    color: crimson;
+    color: rgb(22, 182, 83);
 }
 
 .section-title2{
@@ -91,7 +93,7 @@ p{
 }
 /* Hero Section */
 #hero {
-    background-image: url(./images/nycskyline.png);
+    background-image: url(./images/juicerbackground.jpeg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -136,7 +138,10 @@ p{
 }
 #hero h1:nth-child(2){
     animation: text_reveal_name  .5s ease forwards;
-    animation-delay: 2.3s;
+    animation-delay: 2.5s;
+}
+#hero h1:nth-child(3){
+    animation-delay: 1.9s;
 }
 
 
@@ -173,7 +178,10 @@ p{
     animation-delay: .8s;
 }
 #hero h1:nth-child(2) span{
-    animation-delay: 1.8s;
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay: 1.4s;
 }
 
 
@@ -257,6 +265,149 @@ p{
     text-align: left;
 }
 /* End Service Section */
+
+/* Comparison Section */
+#juicer-comparison, ::before, ::after {
+    box-sizing: border-box;
+}
+
+#juicer-comparison {
+    margin: 0;
+    background-color: #f8f9fb;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    margin: 1rem;
+}
+
+.comp-column {
+    background-color: white;
+    box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+    padding: 2rem;
+    flex-grow: 1;
+    border-radius: 8px;
+}
+
+.comp-column.popular {
+    box-shadow: 0 7px 30px rgba(52, 13, 135, 0.3);
+    margin-top: -1.5rem;
+    padding-top: 3.5rem;
+    margin-bottom: -1.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.most-popular {
+    position: absolute;
+    top: .5rem;
+    margin-left: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppin';
+    margin-top: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: .8px solid rgb(134, 230, 155);
+    background-color: rgba(31, 216, 71, 0.4);
+    padding: 8px;
+    border-radius: 5%;
+    box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+}
+
+.best-price {
+    position: absolute;
+    top: .5rem;
+    margin-left: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppin';
+    margin-top: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: .8px solid rgb(134, 230, 155);
+    background-color: rgba(31, 216, 71, 0.4);
+    padding: 8px;
+    border-radius: 5%;
+    box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+}
+
+.best-price:hover , .most-popular:hover {
+    animation: spin 2.2s infinite;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: rgba(15, 255, 67, 0.4);
+
+}
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.comp-column:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+.comp-column:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.comp-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.comp-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+
+
+
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, .3);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin: .8rem
+}
+
+.feature img {
+    height: 1.6em;
+    width: 1.6em;
+    margin-right: .7rem;
+}
+
+.feature.inactive {
+    color: rgb(162, 162, 162);
+    text-decoration-line: line-through;
+}
+/* End Comparison Section */
+
 
 /* Projects Section */
 #projects .projects {
@@ -453,6 +604,16 @@ p{
     font-weight: 500;
     color: rgb(65, 64, 64);
 }
+
+.contactusp {
+    color:rgb(0, 192, 250);
+    font-size: 18px;
+}
+
+.contactusp:hover {
+    font-weight: bold;
+    font-size: 20px;
+}
 /* End Contact Section */
 
 /*  Footer Section */
@@ -545,6 +706,11 @@ p{
         margin: 1.5%;
     }
     /* End Service Section */
+
+    /* Comparison Section */
+    
+
+    /* End Comparison Section */
 
     /* Project */
 	#projects .project-item {
