@@ -307,7 +307,7 @@ p{
     margin-left: 6px;
     text-align: center;
     font-weight: bold;
-    font-family: 'Poppin';
+    font-family: 'Playfair Display', serif;
     margin-top: 15px;
     font-size: 20px;
     text-transform: uppercase;
@@ -324,7 +324,7 @@ p{
     margin-left: 6px;
     text-align: center;
     font-weight: bold;
-    font-family: 'Poppin';
+    font-family: 'Playfair Display', serif;
     margin-top: 15px;
     font-size: 20px;
     text-transform: uppercase;
@@ -339,7 +339,6 @@ p{
     animation: spin 2.2s infinite;
     animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     background-color: rgba(15, 255, 67, 0.4);
-
 }
 
   @keyframes spin {
@@ -379,7 +378,17 @@ p{
 }
 
 
-
+.comp-button {
+    border: none;
+    background-color: rgba(31, 216, 71, 0.4);
+    align-content: center;
+    padding: 1.5rem 4.5rem;
+    cursor: pointer;
+    margin-left: 32%;
+    font-family: 'Crimson Text', serif;
+    font-size: 15px;
+    font-weight: 600;
+}
 
 
 .divider {
@@ -619,6 +628,8 @@ p{
 /*  Footer Section */
 #footer{ 
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    font-family: 'Dancing Script', cursive;
+
 }
 #footer .footer{
     min-height: 200px;
